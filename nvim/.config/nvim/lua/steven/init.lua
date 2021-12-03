@@ -1,0 +1,5 @@
+require('steven/telescope')
+require('steven/lightline')
+require('steven/gitsigns')
+require('steven/lsp')
+require('steven/treesitter')
