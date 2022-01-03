@@ -50,6 +50,9 @@ set mouse=a
 set ignorecase
 set smartcase
 
+" copy
+set clipboard=unnamed
+
 " plugin -----------------------------------------------
 call plug#begin('~/.config/nvim/plugged')
 
@@ -93,6 +96,9 @@ Plug 'frazrepo/vim-rainbow'
 " Nerdtree
 Plug 'preservim/nerdtree'
 
+" Auto-pair plugin
+Plug 'tmsvg/pear-tree'
+
 call plug#end()
 
 " declare your color scheme
@@ -113,9 +119,13 @@ nnoremap <leader>j :wincmd j<Cr>
 nnoremap <leader>k :wincmd k<Cr>
 nnoremap <leader>l :wincmd l<Cr>
 
+nnoremap Y "+y
+vnoremap Y "+y
+
 nnoremap <C-p> :Telescope find_files<Cr>
 
 nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
+
