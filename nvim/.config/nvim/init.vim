@@ -77,15 +77,15 @@ Plug 'tpope/vim-fugitive'
 Plug 'lewis6991/gitsigns.nvim'
 
 " LSP
-Plug 'neovim/nvim-lspconfig'
-Plug 'williamboman/nvim-lsp-installer'
+"Plug 'neovim/nvim-lspconfig'
+"Plug 'williamboman/nvim-lsp-installer'
 
 " Autocompletion
-Plug 'hrsh7th/nvim-cmp'
-Plug 'hrsh7th/cmp-nvim-lsp'
-Plug 'L3MON4D3/LuaSnip'
-Plug 'saadparwaiz1/cmp_luasnip'
-Plug 'onsails/lspkind-nvim'
+"Plug 'hrsh7th/nvim-cmp'
+"Plug 'hrsh7th/cmp-nvim-lsp'
+"Plug 'L3MON4D3/LuaSnip'
+"Plug 'saadparwaiz1/cmp_luasnip'
+"Plug 'onsails/lspkind-nvim'
 
 " Treesitter
 Plug 'nvim-treesitter/nvim-treesitter', { 'do': ':TSUpdate' }
@@ -98,6 +98,15 @@ Plug 'preservim/nerdtree'
 
 " Auto-pair plugin
 Plug 'tmsvg/pear-tree'
+
+" Syntax
+Plug 'sheerun/vim-polyglot'
+
+" ESLint
+"Plug 'dense-analysis/ale'
+
+" Code helper
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
 
