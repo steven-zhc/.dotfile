@@ -1,0 +1,17 @@
+[user]
+	email = steven.zhang031@gmail.com
+	name = Haichao Zhang
+[core]
+	excludesfile = /Users/steven/.gitignore_global
+	autocrlf = input
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+#[http]
+#	proxy = http://www-proxy-brmdc.us.oracle.com:80
+#[https]
+#	proxy = http://www-proxy-brmdc.us.oracle.com:80
+[pull]
+	ff = only
