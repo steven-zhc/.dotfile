@@ -1,0 +1,51 @@
+# common
+export PATH=.:~/.npm-global/bin:/Users/steven/Workspace/bin:/Users/steven/.gem/ruby/2.6.0/bin:$PATH
+
+export EMACS_HOME=/Applications/Emacs.app/Contents/MacOS
+
+# proxy
+export http_proxy=http://www-proxy-brmdc.us.oracle.com:80
+#export HTTP_PROXY=http://www-proxy-brmdc.us.oracle.com:80
+#export HTTPS_PROXY=http://www-proxy-brmdc.us.oracle.com:80
+export https_proxy=http://www-proxy-brmdc.us.oracle.com:80
+export NO_PROXY=localhost,127.0.0.1,10.96.0.0/12,192.168.99.0/24,192.168.39.0/24,.us.oracle.com,.oraclecorp.com
+#export no_proxy=.oraclecloud.com,.oracle.com,.oraclecorp.com,localhost,192.168.
+
+# helium
+export LOG_LEVEL=debug
+export USERNAME=oscf-artifactory_ww@oracle.com
+export PASSWORD=Welc0meArtifact0ry
+export ARTIFACTORY_USR=$USERNAME
+export ARTIFACTORY_PSW=$PASSWORD
+
+export HELIUM_FA_SERIES=FUSIONAPPS_PT.V2MIBOSCMATDEV_LINUX.X64
+
+#export HELIUM_DB_STRING=slcak349.us.oracle.com:1524/prmdb13
+export HELIUM_DB_STRING=slcak348.us.oracle.com:1578/endvr13
+
+# java
+#export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home
+
+# oracle instance client
+export SQLPLUS_BIN=/usr/local/bin/sqlplus
+export OCI_LIB_DIR=/opt/oracle/instantclient
+export OCI_INC_DIR=/opt/oracle/instantclient/sdk/include
+
+export _JB_INTELLIJ_JASMINE_REPORTER_DISABLED=true
+
+# go
+export GOPATH=/Users/steven/Workspace/go
+export PATH=$PATH:$GOPATH/bin
+
+# node
+export N_PREFIX=$HOME/.n
+export PATH=$N_PREFIX/bin:$PATH
+
+# ansible
+export ANSIBLE_CONFIG=/usr/local/etc/ansible/ansible.cfg
+export ANSIBLE_VAULT_PASSWORD_FILE=~/.ansible/password.txt
+
+# work-station
+export PATH=/Users/steven/Workspace/work-station/script:$PATH
+export PATH=$PATH:/Users/steven/Library/Python/3.9/bin
+export FZF_DEFAULT_COMMAND='rg --files'

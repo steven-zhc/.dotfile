@@ -1,0 +1,34 @@
+# Gulp
+alias gt="gulp --tasks"
+alias g="gulp"
+
+# sqlplus
+alias sp="sqlplus"
+
+# helium
+alias h="helium"
+
+alias dc="docker-compose"
+
+alias c="ccat"
+
+alias ns="npm start"
+
+# purescript
+alias sb="spago build"
+
+alias nb="npm run build"
+alias nt="npm run test"
+
+# emacs
+alias emacs="/Applications/Emacs.app/Contents/MacOS/Emacs -nw"
+
+# python
+alias pip=/usr/local/bin/pip3
+alias python=/usr/local/bin/python3
+
+# k8s
+alias k="kubectl"
+
+# vi
+alias vi="nvim"
