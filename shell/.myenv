@@ -4,11 +4,11 @@ export PATH=.:~/.npm-global/bin:/Users/steven/Workspace/bin:/Users/steven/.gem/r
 export EMACS_HOME=/Applications/Emacs.app/Contents/MacOS
 
 # proxy
-export http_proxy=http://www-proxy-brmdc.us.oracle.com:80
+#export http_proxy=http://www-proxy-brmdc.us.oracle.com:80
 #export HTTP_PROXY=http://www-proxy-brmdc.us.oracle.com:80
 #export HTTPS_PROXY=http://www-proxy-brmdc.us.oracle.com:80
-export https_proxy=http://www-proxy-brmdc.us.oracle.com:80
-export NO_PROXY=localhost,127.0.0.1,10.96.0.0/12,192.168.99.0/24,192.168.39.0/24,.us.oracle.com,.oraclecorp.com
+#export https_proxy=http://www-proxy-brmdc.us.oracle.com:80
+#export NO_PROXY=localhost,127.0.0.1,10.96.0.0/12,192.168.99.0/24,192.168.39.0/24,.us.oracle.com,.oraclecorp.com
 #export no_proxy=.oraclecloud.com,.oracle.com,.oraclecorp.com,localhost,192.168.
 
 # helium
