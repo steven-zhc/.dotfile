@@ -1,13 +1,12 @@
 return require('packer').startup(function()
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
-
+  
   -- theme 
   use {'ellisonleao/gruvbox.nvim', requires = { 'rktjmp/lush.nvim' } }
   use {'rakr/vim-one'}
 
   use {'mhinz/vim-startify'}
-  use {'Yggdroot/indentLine'}
 
   use {
     'nvim-lualine/lualine.nvim',
@@ -15,18 +14,48 @@ return require('packer').startup(function()
   }
 
   -- nvim-tree
-  use {'kyazdani42/nvim-tree.lua', requires = 'kyazdani42/nvim-web-devicons' }
+  use {
+    'kyazdani42/nvim-tree.lua', 
+    requires = 'kyazdani42/nvim-web-devicons',
+    config = function()
+      require('plugin-config.nvim-tree')
+    end
+  }
 
   -- buffer line
-  use {'akinsho/bufferline.nvim', requires = 'kyazdani42/nvim-web-devicons'}
+  use {
+    'akinsho/bufferline.nvim',
+    requires = 'kyazdani42/nvim-web-devicons',
+    config = function()
+      require('plugin-config.bufferline')
+    end
+  }
 
   -- treesitter
-  use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
+  use {
+    'nvim-treesitter/nvim-treesitter',
+    run = ':TSUpdate',
+    config = function()
+      require('plugin-config.nvim-treesitter')
+    end
+  }
 
+  -- ====================================================
+  -- Editor Plugins
+  -- ====================================================
+
+  use {'Yggdroot/indentLine'}
+
+  use {'jiangmiao/auto-pairs'}
+  
   -- file search
   use {
     'nvim-telescope/telescope.nvim',
     requires = { {'nvim-lua/plenary.nvim'} }
+  }
+
+  use {
+    'easymotion/vim-easymotion'
   }
 
   -- surround editor
@@ -36,45 +65,49 @@ return require('packer').startup(function()
 
   -- Git
   use 'tpope/vim-fugitive'
-  use { 'lewis6991/gitsigns.nvim', requires = { 'nvim-lua/plenary.nvim' } }
-
-  -- "gc" to comment visual regions/lines
-  use 'numToStr/Comment.nvim'
-
-  -- lspconfig
-  use {
-    "neovim/nvim-lspconfig",
+  use { 
+    'lewis6991/gitsigns.nvim', 
     config = function()
-      require("lsp.nvim-lspconfig")
+      require('plugin-config.gitsigns')
     end
   }
 
+  -- "gc" to comment visual regions/lines
+  use {
+    'numToStr/Comment.nvim',
+    config = function()
+      require('plugin-config.comment')
+    end
+  }
+
+  -- ====================================================
+  -- lspconfig
+  -- ====================================================
+--[[
   use {
     "williamboman/nvim-lsp-installer",
-    --config = function()
-    --  require("lsp.nvim-lsp-installer")
-    --end
-  }                                          
+    {
+      "neovim/nvim-lspconfig",
+      config = function()
+        require('lsp.nvim-lsp-installer') 
+        require('lsp.nvim-lspconfig')
+      end
+    }
+  }
+  --]]
 
   use {
-    "tami5/lspsaga.nvim",
-    --config = function()
-    --  require("lsp.lspsaga")
-    --end
+    'neovim/nvim-lspconfig'
   }
 
   use 'hrsh7th/nvim-cmp' -- Autocompletion plugin
   use 'hrsh7th/cmp-nvim-lsp'
 
   use {
-    "folke/trouble.nvim",
-    requires = "kyazdani42/nvim-web-devicons",
+    'folke/trouble.nvim',
+    requires = 'kyazdani42/nvim-web-devicons',
     config = function()
-      require("trouble").setup {
-        -- your configuration comes here
-        -- or leave it empty to use the default settings
-        -- refer to the configuration section below
-      }
+      require('trouble').setup {}
     end
   }
 

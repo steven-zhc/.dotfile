@@ -44,26 +44,26 @@ map("t", "<A-j>", [[ <C-\><C-N><C-w>j ]], opt)
 map("t", "<A-k>", [[ <C-\><C-N><C-w>k ]], opt)
 map("t", "<A-l>", [[ <C-\><C-N><C-w>l ]], opt)
 
--- visual模式下缩进代码
+-- visual mode: shift left/right
 map("v", "<", "<gv", opt)
 map("v", ">", ">gv", opt)
--- 上下移动选中文本
+-- move selected text
 map("v", "J", ":move '>+1<CR>gv-gv", opt)
 map("v", "K", ":move '<-2<CR>gv-gv", opt)
 
--- 上下滚动浏览
+-- scroll up/down
 map("n", "<C-j>", "4j", opt)
 map("n", "<C-k>", "4k", opt)
--- ctrl u / ctrl + d  只移动9行，默认移动半屏
+-- ctrl u / ctrl + d  only move 9 lines
 map("n", "<C-u>", "9k", opt)
 map("n", "<C-d>", "9j", opt)
 
--- 退出
+-- quit
 map("n", "q", ":q<CR>", opt)
 map("n", "qq", ":q!<CR>", opt)
 map("n", "Q", ":qa!<CR>", opt)
 
--- insert 模式下，跳到行首行尾
+-- insert mode: insert line head/end 
 map("i", "<C-h>", "<ESC>I", opt)
 map("i", "<C-l>", "<ESC>A", opt)
 
