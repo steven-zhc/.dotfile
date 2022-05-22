@@ -119,8 +119,8 @@ map("n", "<leader>bo", ":BufferLineCloseRight<CR>:BufferLineCloseLeft<CR>", opt)
 map("n", "<leader>bp", ":BufferLinePickClose<CR>", opt)
 
 -- Telescope
-map("n", "<C-p>", ":Telescope find_files<CR>", opt)
-map("n", "<C-f>", ":Telescope live_grep<CR>", opt)
+map("n", "<C-p>", ":Telescope find_files hidden=true<CR>", opt)
+map("n", "<C-f>", ":Telescope live_grep hidden=true<CR>", opt)
 
 pluginKeys.telescopeList = {
   i = {
