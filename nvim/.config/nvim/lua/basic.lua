@@ -1,7 +1,7 @@
 -- utf8
 vim.g.encoding = "UTF-8"
 vim.o.fileencoding = 'utf-8'
--- jkhl 移动时光标周围保留8行
+-- jkhl keep 8 line arround cursor
 vim.o.scrolloff = 8
 vim.o.sidescrolloff = 8
 -- relative number
@@ -50,4 +50,4 @@ vim.o.shortmess = vim.o.shortmess .. 'c'
 vim.o.pumheight = 10
 vim.o.showtabline = 2
 vim.o.showmode = false
-
+vim.o.clipboard = "unnamedplus"
