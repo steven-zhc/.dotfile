@@ -83,6 +83,7 @@ map('n', 'Z', ':foldopen<CR>', opt)
 -- nvimTree
 map('n', '<leader>n', ':NvimTreeToggle<CR>', opt)
 map('n', '<leader>i', ':NvimTreeFindFile<CR>', opt)
+map('n', '<leader>r', ':NvimTreeRefresh<CR>', opt)
 
 pluginKeys.nvimTreeList = {
   { key = { 'o', '<2-LeftMouse>' }, action = 'edit' },
@@ -120,7 +121,9 @@ map("n", "<leader>bp", ":BufferLinePickClose<CR>", opt)
 
 -- Telescope
 map("n", "<C-p>", ":Telescope find_files hidden=true<CR>", opt)
-map("n", "<C-f>", ":Telescope live_grep hidden=true<CR>", opt)
+map("n", "<C-f>", ":Telescope live_grep<CR>", opt)
+-- local find_command = "{ 'rg', '--files', '--hidden', '-g', '!node_modules/**', '-g', '!.git/**', }"
+-- map("n", "<C-f>", "<cmd>lua require('Telescope.builtin').live_grep{}<CR>")
 
 pluginKeys.telescopeList = {
   i = {

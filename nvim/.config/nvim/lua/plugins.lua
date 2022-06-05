@@ -43,14 +43,16 @@ return require('packer').startup(function()
 
   use {'jiangmiao/auto-pairs'}
 
+  use {'Pocco81/AutoSave.nvim'}
+
   -- file search
   use {
     'nvim-telescope/telescope.nvim',
-    requires = { {'nvim-lua/plenary.nvim'} }
+    requires = { 'nvim-lua/plenary.nvim' }
   }
 
-  use("LinArcX/telescope-env.nvim")
-  use("nvim-telescope/telescope-ui-select.nvim")
+  use{ 'LinArcX/telescope-env.nvim' }
+  use{ 'nvim-telescope/telescope-ui-select.nvim' }
 
   use { 'easymotion/vim-easymotion' }
 
@@ -59,7 +61,7 @@ return require('packer').startup(function()
 
   -- Git
   use 'tpope/vim-fugitive'
-  use {  'lewis6991/gitsigns.nvim' }
+  use { 'lewis6991/gitsigns.nvim' }
 
   -- "gc" to comment visual regions/lines
   use { 'numToStr/Comment.nvim' }

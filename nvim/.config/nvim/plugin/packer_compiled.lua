@@ -69,6 +69,11 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["AutoSave.nvim"] = {
+    loaded = true,
+    path = "/Users/steven/.local/share/nvim/site/pack/packer/start/AutoSave.nvim",
+    url = "https://github.com/Pocco81/AutoSave.nvim"
+  },
   ["Comment.nvim"] = {
     loaded = true,
     path = "/Users/steven/.local/share/nvim/site/pack/packer/start/Comment.nvim",
@@ -113,6 +118,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/steven/.local/share/nvim/site/pack/packer/start/cmp-vsnip",
     url = "https://github.com/hrsh7th/cmp-vsnip"
+  },
+  ["dashboard-nvim"] = {
+    loaded = true,
+    path = "/Users/steven/.local/share/nvim/site/pack/packer/start/dashboard-nvim",
+    url = "https://github.com/glepnir/dashboard-nvim"
   },
   ["fidget.nvim"] = {
     loaded = true,
@@ -273,11 +283,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/steven/.local/share/nvim/site/pack/packer/start/vim-one",
     url = "https://github.com/rakr/vim-one"
-  },
-  ["vim-startify"] = {
-    loaded = true,
-    path = "/Users/steven/.local/share/nvim/site/pack/packer/start/vim-startify",
-    url = "https://github.com/mhinz/vim-startify"
   },
   ["vim-surround"] = {
     loaded = true,
