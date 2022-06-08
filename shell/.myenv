@@ -1,11 +1,4 @@
-# common
-export PATH=.:~/.npm-global/bin:/Users/steven/Workspace/bin:/Users/steven/.gem/ruby/2.6.0/bin:$PATH
-
-export EMACS_HOME=/Applications/Emacs.app/Contents/MacOS
-
-# proxy
-#export http_proxy=http://www-proxy-brmdc.us.oracle.com:80
-#export HTTP_PROXY=http://www-proxy-brmdc.us.oracle.com:80
+# common export PATH=.:~/.npm-global/bin:/Users/steven/Workspace/bin:/Users/steven/.gem/ruby/2.6.0/bin:$PATH export EMACS_HOME=/Applications/Emacs.app/Contents/MacOS proxy export http_proxy=http://www-proxy-brmdc.us.oracle.com:80 export HTTP_PROXY=http://www-proxy-brmdc.us.oracle.com:80
 #export HTTPS_PROXY=http://www-proxy-brmdc.us.oracle.com:80
 #export https_proxy=http://www-proxy-brmdc.us.oracle.com:80
 #export NO_PROXY=localhost,127.0.0.1,10.96.0.0/12,192.168.99.0/24,192.168.39.0/24,.us.oracle.com,.oraclecorp.com
@@ -13,10 +6,11 @@ export EMACS_HOME=/Applications/Emacs.app/Contents/MacOS
 
 # helium
 export LOG_LEVEL=debug
-export USERNAME=oscf-artifactory_ww@oracle.com
 export PASSWORD=Welc0meArtifact0ry
-export ARTIFACTORY_USR=$USERNAME
-export ARTIFACTORY_PSW=$PASSWORD
+export ARTIFACTORY_USR=oscf-artifactory_ww@oracle.com
+export ARTIFACTORY_PSW=Welc0meArtifact0ry
+
+export PKG_CACHE_PATH=/Users/steven/.pkg_cache_path
 
 export HELIUM_FA_SERIES=FUSIONAPPS_PT.V2MIBOSCMATDEV_LINUX.X64
 
