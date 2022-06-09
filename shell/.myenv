@@ -6,9 +6,6 @@
 
 # helium
 export LOG_LEVEL=debug
-export PASSWORD=Welc0meArtifact0ry
-export ARTIFACTORY_USR=oscf-artifactory_ww@oracle.com
-export ARTIFACTORY_PSW=Welc0meArtifact0ry
 
 export PKG_CACHE_PATH=/Users/steven/.pkg_cache_path
 
