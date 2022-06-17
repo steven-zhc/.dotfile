@@ -30,7 +30,7 @@ export PATH=$PATH:$GOPATH/bin
 
 # node
 export N_PREFIX=$HOME/.n
-export PATH=$N_PREFIX/bin:$PATH
+export PATH=$N_PREFIX/bin:/Users/steven/.npm-global/bin:$PATH
 
 # ansible
 export ANSIBLE_CONFIG=/usr/local/etc/ansible/ansible.cfg

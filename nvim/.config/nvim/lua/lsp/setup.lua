@@ -12,6 +12,8 @@ local servers = {
   tsserver = require("lsp.config.tsserver"),
   yamlls = require("lsp.config.yamlls"),
   remark_ls = require("lsp.config.markdown"),
+  purescriptls = require("lsp.config.purescriptls"),
+  dhall_lsp_server = "true",
 }
 
 for name, config in pairs(servers) do

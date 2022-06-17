@@ -50,6 +50,10 @@ return require('packer').startup(function()
     'nvim-telescope/telescope.nvim',
     requires = { 'nvim-lua/plenary.nvim' }
   }
+  use {
+    "folke/trouble.nvim",
+    requires = "kyazdani42/nvim-web-devicons",
+  }
 
   use{ 'LinArcX/telescope-env.nvim' }
   use{ 'nvim-telescope/telescope-ui-select.nvim' }
