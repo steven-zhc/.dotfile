@@ -1,18 +1,25 @@
-# common export PATH=.:~/.npm-global/bin:/Users/steven/Workspace/bin:/Users/steven/.gem/ruby/2.6.0/bin:$PATH export EMACS_HOME=/Applications/Emacs.app/Contents/MacOS proxy export http_proxy=http://www-proxy-brmdc.us.oracle.com:80 export HTTP_PROXY=http://www-proxy-brmdc.us.oracle.com:80
+#export HTTP_PROXY=http://www-proxy-brmdc.us.oracle.com:80
 #export HTTPS_PROXY=http://www-proxy-brmdc.us.oracle.com:80
+#export http_proxy=http://www-proxy-brmdc.us.oracle.com:80
 #export https_proxy=http://www-proxy-brmdc.us.oracle.com:80
 #export NO_PROXY=localhost,127.0.0.1,10.96.0.0/12,192.168.99.0/24,192.168.39.0/24,.us.oracle.com,.oraclecorp.com
 #export no_proxy=.oraclecloud.com,.oracle.com,.oraclecorp.com,localhost,192.168.
 
+
+# Rancher
+export PATH=$PATH:/Users/steven/.rd/bin
+
 # helium
 export LOG_LEVEL=debug
-
 export PKG_CACHE_PATH=/Users/steven/.pkg_cache_path
-
 export HELIUM_FA_SERIES=FUSIONAPPS_PT.V2MIBOSCMATDEV_LINUX.X64
+export HV_PREFIX=/Users/steven/.helium
 
 #export HELIUM_DB_STRING=slcak349.us.oracle.com:1524/prmdb13
-export HELIUM_DB_STRING=slcak348.us.oracle.com:1578/endvr13
+
+export ARTIFACTORY_PHX_USR=oscf-artifactory_ww@oracle.com
+export ARTIFACTORY_PHX_PSW=AKCp8iggZoazpKzRu2hdaxh9eGNN14ynqUR89EfV2LvaqJGTjrotTM2yznnhZec8ztb5orfZW
+
 
 # java
 #export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home
@@ -28,10 +35,6 @@ export _JB_INTELLIJ_JASMINE_REPORTER_DISABLED=true
 export GOPATH=/Users/steven/Workspace/go
 export PATH=$PATH:$GOPATH/bin
 
-# node
-export N_PREFIX=$HOME/.n
-export PATH=$N_PREFIX/bin:/Users/steven/.npm-global/bin:$PATH
-
 # ansible
 export ANSIBLE_CONFIG=/usr/local/etc/ansible/ansible.cfg
 export ANSIBLE_VAULT_PASSWORD_FILE=~/.ansible/password.txt
@@ -40,3 +43,16 @@ export ANSIBLE_VAULT_PASSWORD_FILE=~/.ansible/password.txt
 export PATH=/Users/steven/Workspace/work-station/script:$PATH
 export PATH=$PATH:/Users/steven/Library/Python/3.9/bin
 export FZF_DEFAULT_COMMAND='rg --files'
+
+# nodejs
+export PNPM_HOME="/Users/steven/Library/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"
+
+# bun completions
+[ -s "/Users/steven/.bun/_bun" ] && source "/Users/steven/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"

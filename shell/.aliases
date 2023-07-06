@@ -32,3 +32,15 @@ alias k="kubectl"
 
 # vi
 alias vi="nvim"
+
+# k8s
+alias compdef k="kubectl"
+
+# bat
+help() {
+    "$@" --help 2>&1 | bathelp
+}
+
+# git
+alias gst="git status"
+alias lg="lazygit"
