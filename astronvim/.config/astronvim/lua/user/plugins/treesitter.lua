@@ -17,5 +17,14 @@ return {
       "python",
       "yaml",
     })
+    opts.incremental_selection = {
+      enable = true,
+      keymaps = {
+        init_selection = "<CR>",
+        node_incremental = "<CR>",
+        scope_incremental = "grc",
+        node_decremental = "grm",
+      },
+    }
   end,
 }
