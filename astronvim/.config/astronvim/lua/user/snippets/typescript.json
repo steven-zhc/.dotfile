@@ -1,9 +1,4 @@
 {
-  "snip1": {
-    "prefix": ["hl"],
-    "body": ["say hello", "say nihao"],
-    "description": "test my snip"
-  },
   "error": {
     "prefix": ["nerr"],
     "body": [

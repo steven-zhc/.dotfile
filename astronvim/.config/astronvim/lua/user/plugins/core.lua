@@ -27,6 +27,15 @@ return {
   --     return opts
   --   end,
   -- },
+  {
+    "kenn7/vim-arsync",
+    dependencies = { "prabirshrestha/async.vim" },
+    event = "User AstroFile",
+    keys = {
+      { "<leader>k", "<cmd>ARsyncUp<cr>", desc = "Upload sync" },
+      { "<leader>K", "<cmd>ARsyncDown<cr>", desc = "Download sync" },
+    },
+  },
   -- You can disable default plugins as follows:
   -- { "max397574/better-escape.nvim", enabled = false },
   --

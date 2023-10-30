@@ -22,7 +22,8 @@ export ARTIFACTORY_PHX_PSW=AKCp8iggZoazpKzRu2hdaxh9eGNN14ynqUR89EfV2LvaqJGTjrotT
 
 
 # java
-#export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home
+export JAVA_HOME=$(/usr/libexec/java_home)
+export PATH="/usr/local/opt/openjdk/bin:$PATH"
 
 # oracle instance client
 export SQLPLUS_BIN=/usr/local/bin/sqlplus
@@ -32,8 +33,8 @@ export OCI_INC_DIR=/opt/oracle/instantclient/sdk/include
 export _JB_INTELLIJ_JASMINE_REPORTER_DISABLED=true
 
 # go
-export GOPATH=/Users/steven/Workspace/go
-export PATH=$PATH:$GOPATH/bin
+export PATH="$HOME/.gobrew/current/bin:$HOME/.gobrew/bin:$PATH"
+export GOROOT="$HOME/.gobrew/current/go"
 
 # ansible
 export ANSIBLE_CONFIG=/usr/local/etc/ansible/ansible.cfg
@@ -59,3 +60,6 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 
 # nvim
 export XDG_CONFIG_HOME=~/.config
+
+# rust
+source $HOME/.cargo/env
