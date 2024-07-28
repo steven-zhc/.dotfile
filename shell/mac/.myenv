@@ -1,3 +1,7 @@
+if [ -f ~/.secret ]; then
+        . ~/.secret
+fi
+export EDITOR=nvim
 #export HTTP_PROXY=http://www-proxy-brmdc.us.oracle.com:80
 #export HTTPS_PROXY=http://www-proxy-brmdc.us.oracle.com:80
 #export http_proxy=http://www-proxy-brmdc.us.oracle.com:80
@@ -5,6 +9,8 @@
 #export NO_PROXY=localhost,127.0.0.1,10.96.0.0/12,192.168.99.0/24,192.168.39.0/24,.us.oracle.com,.oraclecorp.com
 #export no_proxy=.oraclecloud.com,.oracle.com,.oraclecorp.com,localhost,192.168.
 
+# OCI
+export KUBECONFIG=$KUBECONFIG:/Users/steven/.kube/cxsales-sales-common-config
 
 # Rancher
 export PATH=$PATH:/Users/steven/.rd/bin
@@ -18,7 +24,6 @@ export HV_PREFIX=/Users/steven/.helium
 #export HELIUM_DB_STRING=slcak349.us.oracle.com:1524/prmdb13
 
 export ARTIFACTORY_PHX_USR=oscf-artifactory_ww@oracle.com
-export ARTIFACTORY_PHX_PSW=AKCp8iggZoazpKzRu2hdaxh9eGNN14ynqUR89EfV2LvaqJGTjrotTM2yznnhZec8ztb5orfZW
 
 
 # java
@@ -42,7 +47,6 @@ export ANSIBLE_VAULT_PASSWORD_FILE=~/.ansible/password.txt
 
 # work-station
 export PATH=/Users/steven/Workspace/work-station/script:$PATH
-export PATH=$PATH:/Users/steven/Library/Python/3.9/bin
 export FZF_DEFAULT_COMMAND='rg --files'
 
 # nodejs
@@ -63,3 +67,18 @@ export XDG_CONFIG_HOME=~/.config
 
 # rust
 source $HOME/.cargo/env
+
+# localai
+export LOCALAI=http://phoenix266355.appsdev.fusionappsdphx1.oraclevcn.com:18080
+
+# openai
+export OPENAI_API_BASE=$LOCALAI
+
+# langchain
+export LANGCHAIN_TRACING_V2="true"
+
+# weaviate
+export WEAVIATE_CLUSTER_URL=https://hczhang-bl9waagf.weaviate.network
+
+# sqlplus
+export PATH=/Users/steven/Workspace/instantclient_19_16:$PATH

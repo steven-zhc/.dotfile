@@ -126,3 +126,22 @@ export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=215'
 #if [ -e /Users/steven/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/steven/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
 #export PATH="/usr/local/sbin:$PATH"
 
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/Users/steven/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/Users/steven/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/Users/steven/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/Users/steven/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
+
+# bun completions
+[ -s "/Users/steven/.bun/_bun" ] && source "/Users/steven/.bun/_bun"

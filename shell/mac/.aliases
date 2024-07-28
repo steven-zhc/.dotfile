@@ -1,5 +1,7 @@
 # Pet
-alias pe="pet exec"
+pe() {
+  print -z $(pet search $*)
+}
 
 # Gulp
 alias gt="gulp --tasks"
@@ -24,11 +26,11 @@ alias nb="npm run build"
 alias nt="npm run test"
 
 # emacs
-alias emacs="/Applications/Emacs.app/Contents/MacOS/Emacs -nw"
+# alias emacs="/Applications/Emacs.app/Contents/MacOS/Emacs -nw"
 
 # python
-alias pip=/usr/local/bin/pip3
-alias python=/usr/local/bin/python3
+#alias pip=/usr/local/bin/pip3
+#alias python=/usr/local/bin/python3
 
 # k8s
 alias k="kubectl"
