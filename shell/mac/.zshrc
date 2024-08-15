@@ -3,7 +3,7 @@
 source ~/.myenv
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/steven/.oh-my-zsh"
+export ZSH="/Users/haiczhan/.oh-my-zsh"
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -64,19 +64,22 @@ ZSH_THEME="bira"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
-  osx
   colored-man-pages
-  zsh-autosuggestions
   kubectl
   helm
   ansible
   httpie
+  fzf
+  z
+  zsh-autocomplete
 )
 
 # git
 # sublime
 
 source $ZSH/oh-my-zsh.sh
+
+source /opt/homebrew/share/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 
 # User configuration
 
@@ -108,40 +111,10 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="sublime ~/.oh-my-zsh"
 source ~/.aliases
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-# eval "$(jenv init -)"
-# eval $(thefuck --alias)
+source <(fzf --zsh)
 
 ulimit -S -n 2048
 
-# if type brew &>/dev/null; then
-#     FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
-#
-#     autoload -Uz compinit
-#     compinit
-# fi
-
 eval "$(starship init zsh)"
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=215'
-#if [ -e /Users/steven/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/steven/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
-#export PATH="/usr/local/sbin:$PATH"
 
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/steven/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/Users/steven/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/Users/steven/anaconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/Users/steven/anaconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
-
-
-# bun completions
-[ -s "/Users/steven/.bun/_bun" ] && source "/Users/steven/.bun/_bun"

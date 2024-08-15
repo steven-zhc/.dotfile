@@ -10,16 +10,16 @@ export EDITOR=nvim
 #export no_proxy=.oraclecloud.com,.oracle.com,.oraclecorp.com,localhost,192.168.
 
 # OCI
-export KUBECONFIG=$KUBECONFIG:/Users/steven/.kube/cxsales-sales-common-config
+# export KUBECONFIG=$KUBECONFIG:/Users/steven/.kube/cxsales-sales-common-config
 
 # Rancher
-export PATH=$PATH:/Users/steven/.rd/bin
+# export PATH=$PATH:/Users/steven/.rd/bin
 
 # helium
 export LOG_LEVEL=debug
-export PKG_CACHE_PATH=/Users/steven/.pkg_cache_path
+# export PKG_CACHE_PATH=/Users/steven/.pkg_cache_path
 export HELIUM_FA_SERIES=FUSIONAPPS_PT.V2MIBOSCMATDEV_LINUX.X64
-export HV_PREFIX=/Users/steven/.helium
+# export HV_PREFIX=/Users/steven/.helium
 
 #export HELIUM_DB_STRING=slcak349.us.oracle.com:1524/prmdb13
 
@@ -38,25 +38,25 @@ export OCI_INC_DIR=/opt/oracle/instantclient/sdk/include
 export _JB_INTELLIJ_JASMINE_REPORTER_DISABLED=true
 
 # go
-export PATH="$HOME/.gobrew/current/bin:$HOME/.gobrew/bin:$PATH"
-export GOROOT="$HOME/.gobrew/current/go"
+# export PATH="$HOME/.gobrew/current/bin:$HOME/.gobrew/bin:$PATH"
+# export GOROOT="$HOME/.gobrew/current/go"
 
 # ansible
 export ANSIBLE_CONFIG=/usr/local/etc/ansible/ansible.cfg
 export ANSIBLE_VAULT_PASSWORD_FILE=~/.ansible/password.txt
 
 # work-station
-export PATH=/Users/steven/Workspace/work-station/script:$PATH
+export PATH=/Users/haiczhan/Workspace/work-station/script:$PATH
 export FZF_DEFAULT_COMMAND='rg --files'
 
 # nodejs
-export PNPM_HOME="/Users/steven/Library/pnpm"
+# export PNPM_HOME="/Users/steven/Library/pnpm"
 export PATH="$PNPM_HOME:$PATH"
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
 
 # bun completions
-[ -s "/Users/steven/.bun/_bun" ] && source "/Users/steven/.bun/_bun"
+[ -s "/Users/haiczhan/.bun/_bun" ] && source "/Users/haiczhan/.bun/_bun"
 
 # bun
 export BUN_INSTALL="$HOME/.bun"
@@ -66,10 +66,10 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 export XDG_CONFIG_HOME=~/.config
 
 # rust
-source $HOME/.cargo/env
+# source $HOME/.cargo/env
 
 # localai
-export LOCALAI=http://phoenix266355.appsdev.fusionappsdphx1.oraclevcn.com:18080
+# export LOCALAI=http://phoenix266355.appsdev.fusionappsdphx1.oraclevcn.com:18080
 
 # openai
 export OPENAI_API_BASE=$LOCALAI
@@ -81,4 +81,4 @@ export LANGCHAIN_TRACING_V2="true"
 export WEAVIATE_CLUSTER_URL=https://hczhang-bl9waagf.weaviate.network
 
 # sqlplus
-export PATH=/Users/steven/Workspace/instantclient_19_16:$PATH
+# export PATH=/Users/steven/Workspace/instantclient_19_16:$PATH

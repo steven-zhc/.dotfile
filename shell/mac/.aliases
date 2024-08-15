@@ -3,10 +3,6 @@ pe() {
   print -z $(pet search $*)
 }
 
-# Gulp
-alias gt="gulp --tasks"
-alias g="gulp"
-
 # sqlplus
 alias sp="sqlplus"
 
@@ -25,21 +21,16 @@ alias sb="spago build"
 alias nb="npm run build"
 alias nt="npm run test"
 
-# emacs
-# alias emacs="/Applications/Emacs.app/Contents/MacOS/Emacs -nw"
-
 # python
 #alias pip=/usr/local/bin/pip3
 #alias python=/usr/local/bin/python3
 
 # k8s
 alias k="kubectl"
+alias compdef k="kubectl"
 
 # vi
 alias vi="nvim"
-
-# k8s
-alias compdef k="kubectl"
 
 # bat
 help() {
@@ -49,7 +40,3 @@ help() {
 # git
 alias gst="git status"
 alias lg="lazygit"
-
-# shell
-alias ll="exa -l --git --time-style=long-iso --group-directories-first --header --icons"
-alias la="exa -la --git --time-style=long-iso --group-directories-first --header --icons -a"
