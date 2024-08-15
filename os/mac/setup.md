@@ -4,7 +4,8 @@ brew install zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 brew install --cask font-fira-code-nerd-font
 brew install --cask font-jetbrains-mono-nerd-font
-brew install fzf bat httpie curl tmux lazygit ansible jq wget zoxid fd
+brew install fzf bat httpie curl tmux lazygit ansible jq wget zoxid fd rg
+brew install zsh-autocomplete
 
 # nodejs typescript
 brew install volta

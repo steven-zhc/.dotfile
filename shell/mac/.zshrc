@@ -2,6 +2,8 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 source ~/.myenv
 
+source /opt/homebrew/share/zsh-autocomplete/zsh-autocomplete.plugin.zsh
+
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/haiczhan/.oh-my-zsh"
 
@@ -71,15 +73,12 @@ plugins=(
   httpie
   fzf
   z
-  zsh-autocomplete
 )
 
 # git
 # sublime
 
 source $ZSH/oh-my-zsh.sh
-
-source /opt/homebrew/share/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 
 # User configuration
 
@@ -109,6 +108,7 @@ source /opt/homebrew/share/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 # Example aliases
 # alias zshconfig="sublime ~/.zshrc"
 # alias ohmyzsh="sublime ~/.oh-my-zsh"
+
 source ~/.aliases
 
 source <(fzf --zsh)
