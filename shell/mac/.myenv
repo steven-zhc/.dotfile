@@ -1,34 +1,28 @@
 if [ -f ~/.secret ]; then
         . ~/.secret
 fi
+
 export EDITOR=nvim
-#export HTTP_PROXY=http://www-proxy-brmdc.us.oracle.com:80
-#export HTTPS_PROXY=http://www-proxy-brmdc.us.oracle.com:80
-#export http_proxy=http://www-proxy-brmdc.us.oracle.com:80
-#export https_proxy=http://www-proxy-brmdc.us.oracle.com:80
+# export HTTP_PROXY=http://www-proxy-brmdc.us.oracle.com:80
+# export HTTPS_PROXY=http://www-proxy-brmdc.us.oracle.com:80
+export http_proxy=http://www-proxy-brmdc.us.oracle.com:80
+export https_proxy=http://www-proxy-brmdc.us.oracle.com:80
 #export NO_PROXY=localhost,127.0.0.1,10.96.0.0/12,192.168.99.0/24,192.168.39.0/24,.us.oracle.com,.oraclecorp.com
-#export no_proxy=.oraclecloud.com,.oracle.com,.oraclecorp.com,localhost,192.168.
+export no_proxy=.oraclecloud.com,.oracle.com,.oraclecorp.com,.oraclevcn.com,localhost,192.168.
 
 # OCI
-# export KUBECONFIG=$KUBECONFIG:/Users/steven/.kube/cxsales-sales-common-config
+# export KUBECONFIG=$KUBECONFIG:/Users/${USER}/.kube/cxsales-sales-common-config
 
 # Rancher
-# export PATH=$PATH:/Users/steven/.rd/bin
+# export PATH=$PATH:/Users/${USER}/.rd/bin
 
-# helium
-export LOG_LEVEL=debug
-# export PKG_CACHE_PATH=/Users/steven/.pkg_cache_path
-export HELIUM_FA_SERIES=FUSIONAPPS_PT.V2MIBOSCMATDEV_LINUX.X64
-# export HV_PREFIX=/Users/steven/.helium
-
-#export HELIUM_DB_STRING=slcak349.us.oracle.com:1524/prmdb13
-
-export ARTIFACTORY_PHX_USR=oscf-artifactory_ww@oracle.com
-
+# node
+export VOLTA_HOME=/Users/${USER}/.volta
+export PATH=$VOLTA_HOME/bin:$PATH
 
 # java
 export JAVA_HOME=$(/usr/libexec/java_home)
-export PATH="/usr/local/opt/openjdk/bin:$PATH"
+export PATH="${JAVA_HOME}/bin:$PATH"
 
 # oracle instance client
 export SQLPLUS_BIN=/usr/local/bin/sqlplus
@@ -46,21 +40,8 @@ export ANSIBLE_CONFIG=/usr/local/etc/ansible/ansible.cfg
 export ANSIBLE_VAULT_PASSWORD_FILE=~/.ansible/password.txt
 
 # work-station
-export PATH=/Users/haiczhan/Workspace/work-station/script:$PATH
+export PATH=/Users/${USER}/Workspace/work-station/script:$PATH
 export FZF_DEFAULT_COMMAND='rg --files'
-
-# nodejs
-# export PNPM_HOME="/Users/steven/Library/pnpm"
-export PATH="$PNPM_HOME:$PATH"
-export VOLTA_HOME="$HOME/.volta"
-export PATH="$VOLTA_HOME/bin:$PATH"
-
-# bun completions
-[ -s "/Users/haiczhan/.bun/_bun" ] && source "/Users/haiczhan/.bun/_bun"
-
-# bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
 
 # nvim
 export XDG_CONFIG_HOME=~/.config
@@ -81,4 +62,14 @@ export LANGCHAIN_TRACING_V2="true"
 export WEAVIATE_CLUSTER_URL=https://hczhang-bl9waagf.weaviate.network
 
 # sqlplus
-# export PATH=/Users/steven/Workspace/instantclient_19_16:$PATH
+# export PATH=/Users/${USER}/Workspace/instantclient_19_16:$PATH
+
+# helium
+export LOG_LEVEL=debug
+# export PKG_CACHE_PATH=/Users/${USER}/.pkg_cache_path
+export HELIUM_FA_SERIES=FUSIONAPPS_PT.V2MIBOSCMATDEV_LINUX.X64
+export HV_PREFIX=/Users/${USER}/.helium
+
+#export HELIUM_DB_STRING=slcak349.us.oracle.com:1524/prmdb13
+
+export ARTIFACTORY_PHX_USR=oscf-artifactory_ww@oracle.com

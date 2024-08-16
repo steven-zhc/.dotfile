@@ -22,8 +22,8 @@ alias nb="npm run build"
 alias nt="npm run test"
 
 # python
-#alias pip=/usr/local/bin/pip3
-#alias python=/usr/local/bin/python3
+alias pip=/usr/bin/pip3
+alias python=/usr/bin/python3
 
 # k8s
 alias k="kubectl"

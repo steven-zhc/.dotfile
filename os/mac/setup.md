@@ -6,6 +6,8 @@ brew install --cask font-fira-code-nerd-font
 brew install --cask font-jetbrains-mono-nerd-font
 brew install fzf bat httpie curl tmux lazygit ansible jq wget zoxid fd rg
 brew install zsh-autocomplete
+brew install openjdk
+sudo ln -sfn /opt/homebrew/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
 
 # nodejs typescript
 brew install volta
