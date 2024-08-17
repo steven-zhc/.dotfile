@@ -36,7 +36,7 @@ export _JB_INTELLIJ_JASMINE_REPORTER_DISABLED=true
 # export GOROOT="$HOME/.gobrew/current/go"
 
 # ansible
-export ANSIBLE_CONFIG=/usr/local/etc/ansible/ansible.cfg
+export ANSIBLE_CONFIG=~/.ansible/ansible.cfg
 export ANSIBLE_VAULT_PASSWORD_FILE=~/.ansible/password.txt
 
 # work-station
