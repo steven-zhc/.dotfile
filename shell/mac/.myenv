@@ -24,6 +24,9 @@ export PATH=$VOLTA_HOME/bin:$PATH
 export JAVA_HOME=$(/usr/libexec/java_home)
 export PATH="${JAVA_HOME}/bin:$PATH"
 
+# python
+export PYTHONPATH="$PYTHONPATH:$PWD"
+
 # oracle instance client
 export SQLPLUS_BIN=/usr/local/bin/sqlplus
 export OCI_LIB_DIR=/opt/oracle/instantclient
@@ -38,6 +41,8 @@ export _JB_INTELLIJ_JASMINE_REPORTER_DISABLED=true
 # ansible
 export ANSIBLE_CONFIG=~/.ansible/ansible.cfg
 export ANSIBLE_VAULT_PASSWORD_FILE=~/.ansible/password.txt
+export ANSIBLE_HOME='/opt/homebrew/opt/ansible@9'
+export PATH=$ANSIBLE_HOME/bin:$PATH
 
 # work-station
 export PATH=/Users/${USER}/Workspace/work-station/script:$PATH

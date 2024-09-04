@@ -10,14 +10,10 @@ fi
 
 # User specific aliases and functions
 
-alias h="helium"
-alias g='gulp'
-alias gt='gulp --tasks'
+if [ -f ~/.aliases ]; then
+        . ~/.aliases
+fi
 
-alias d="docker"
-alias dc="docker-compose"
-
-alias pc="podman-compose"
 
 export TMPDIR=/scratch/podman/tmp
 

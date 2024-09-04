@@ -4,9 +4,10 @@ brew install zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 brew install --cask font-fira-code-nerd-font
 brew install --cask font-jetbrains-mono-nerd-font
-brew install fzf bat httpie curl tmux lazygit ansible jq wget zoxid fd rg
+brew install fzf bat httpie curl tmux lazygit ansible@9 jq wget zoxid fd rg
 brew install zsh-autocomplete
 brew install openjdk
+brew install wouterdebie/repo/i2cssh
 sudo ln -sfn /opt/homebrew/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
 
 # nodejs typescript
