@@ -1,0 +1,38 @@
+# .myenv
+if [ -f ~/.secret ]; then
+        . ~/.secret
+fi
+
+. /usr/local/packages/Proxy-Config-set.sh
+export no_proxy=$no_proxy,.oraclevcn.com
+
+# User specific environment and startup programs
+
+# node
+export VOLTA_HOME=/scratch/.volta
+export PATH=$VOLTA_HOME/bin:$PATH
+
+# helium
+export LOG_LEVEL=debug
+export HELIUM_FA_SERIES=FUSIONAPPS_PT.V2MIBOSCMATDEV_LINUX.X64
+export HELIUM_HOME=/scratch/helium/helium.js
+
+# export PKG_CACHE_PATH=/Users/${USER}/.pkg_cache_path
+export HV_PREFIX=/scratch/bin
+export PATH=$HELIUM_HOME/cli:$HV_PREFIX:$PATH
+
+export ARTIFACTORY_PHX_USR=oscf-artifactory_ww@oracle.com
+
+# ADE PROPS
+export ADE_SITE=ade_fusion_phx
+export ADE_SKIP_HARDCODED_EXPANDS=1
+export FA_DEVELOPER_ELECTS_SLOW_PERFORMANCE=YES
+export ADE_EXPAND_SPEC=fmwtools/*:fusionapps/jlib/*:fusionapps/crm/*
+export FA_ARTIFACTORY_CACHE_ENABLED=false
+export FA_ARTIFACTORY_CACHE_PURGE_ENABLED=false
+export FA_PREPVIEW_FILTERS=ALL
+export LocalTempDir=/scratch/tmp
+export FUSIONAPPS_SKIP_FMWC=TRUE
+
+# overall
+export PATH=/scratch/bin:$PATH
