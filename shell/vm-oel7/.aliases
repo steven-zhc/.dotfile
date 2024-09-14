@@ -28,8 +28,6 @@ alias gt='gulp --tasks'
 alias d="docker"
 alias dc="docker-compose"
 
-alias pc="podman-compose"
-
 alias drn="docker rmi -f $(docker images | grep 'one' | awk '{print $3}')"
 alias dre="docker ps -a | grep Exit | cut -d ' ' -f 1 | xargs docker rm"
 

@@ -31,11 +31,11 @@ export ADE_EXPAND_SPEC=fmwtools/*:fusionapps/jlib/*:fusionapps/crm/*
 export FA_ARTIFACTORY_CACHE_ENABLED=false
 export FA_ARTIFACTORY_CACHE_PURGE_ENABLED=false
 export FA_PREPVIEW_FILTERS=ALL
-export LocalTempDir=/scratch/tmp
+export LocalTempDir=/scratch/adetmp
 
 # podman
 export TMPDIR=/scratch/podman/tmp
 
 
 # overall
-export PATH=/scratch/bin:$PATH
+export PATH=/scratch/bin:/usr/bin:$PATH
