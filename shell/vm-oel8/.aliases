@@ -1,38 +1,12 @@
-# sqlplus
-alias sp="sqlplus"
+if [ -f ~/.aliases-core ]; then
+        . ~/.aliases-core
+fi
 
-# helium
-alias h="helium"
+alias pc="podman-compose"
+alias p="podman"
 
-alias dc="docker-compose"
-
-# purescript
-alias sb="spago build"
-
-# k8s
-alias k="kubectl"
+# git
+alias lg="lazygit"
 
 # vi
 alias vi="nvim"
-
-# git
-alias gst="git status"
-alias lg="lazygit"
-alias gc="git reset --hard HEAD; git clean -df"
-
-# gulp
-alias g='gulp'
-alias gt='gulp --tasks'
-
-# container
-alias d="docker"
-alias dc="docker-compose"
-
-alias pc="podman-compose"
-
-alias drn="docker rmi -f $(docker images | grep 'one' | awk '{print $3}')"
-alias dre="docker ps -a | grep Exit | cut -d ' ' -f 1 | xargs docker rm"
-
-# ade
-alias alv="ade lsviews"
-alias af="ade refreshview -latest"
