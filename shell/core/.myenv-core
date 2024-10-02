@@ -35,4 +35,4 @@ export LocalTempDir=/scratch/adetmp
 export FUSIONAPPS_SKIP_FMWC=TRUE
 
 # overall
-export PATH=/scratch/bin:/usr/bin:$PATH
+export PATH=$PATH:/scratch/bin:/usr/bin
