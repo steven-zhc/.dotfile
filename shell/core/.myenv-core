@@ -15,11 +15,11 @@ export PATH=$VOLTA_HOME/bin:$PATH
 # helium
 export LOG_LEVEL=debug
 export HELIUM_FA_SERIES=FUSIONAPPS_PT.V2MIBOSCMATDEV_LINUX.X64
-export HELIUM_HOME=/scratch/helium/helium.js
+export HELIUM_HOME=/scratch/helium
 
 # export PKG_CACHE_PATH=/Users/${USER}/.pkg_cache_path
 export HV_PREFIX=/scratch/bin
-export PATH=$HELIUM_HOME/cli:$HV_PREFIX:$PATH
+export PATH=$HELIUM_HOME/helium.js/cli:$HV_PREFIX:$PATH
 
 export ARTIFACTORY_PHX_USR=oscf-artifactory_ww@oracle.com
 

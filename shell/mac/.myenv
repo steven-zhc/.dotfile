@@ -18,7 +18,7 @@ export no_proxy=.oraclecloud.com,.oracle.com,.oraclecorp.com,.oraclevcn.com,loca
 
 # node
 export VOLTA_HOME=/Users/${USER}/.volta
-export PATH=$VOLTA_HOME/bin:$PATH
+export PATH=$VOLTA_HOME/bin:~/.npm-global:$PATH
 
 # java
 export JAVA_HOME=$(/usr/libexec/java_home)
@@ -74,6 +74,7 @@ export LOG_LEVEL=debug
 # export PKG_CACHE_PATH=/Users/${USER}/.pkg_cache_path
 export HELIUM_FA_SERIES=FUSIONAPPS_PT.V2MIBOSCMATDEV_LINUX.X64
 export HV_PREFIX=/Users/${USER}/.helium
+export HELIUM_HOME=/Users/haiczhan/Workspace/helium
 
 #export HELIUM_DB_STRING=slcak349.us.oracle.com:1524/prmdb13
 
