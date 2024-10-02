@@ -2,6 +2,9 @@ if [ -f ~/.myenv-core ]; then
         . ~/.myenv-core
 fi
 
+# starship
+export BIN_DIR=/scratch/local/apps/starship
+
 # podman
 export TMPDIR=/scratch/podman/tmp
 
