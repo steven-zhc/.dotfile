@@ -31,3 +31,4 @@ alias dce="docker ps -a | grep Exit | cut -d ' ' -f 1 | xargs docker rm"
 # ade
 alias alv="ade lsviews"
 alias af="ade refreshview -latest"
+alias ai="ade useview"

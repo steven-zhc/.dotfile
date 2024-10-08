@@ -10,3 +10,6 @@ alias lg="lazygit"
 
 # vi
 alias vi="nvim"
+
+# pnpm
+alias pb="pnpm run build"
