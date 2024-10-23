@@ -77,5 +77,3 @@ export HV_PREFIX=/Users/${USER}/.helium
 export HELIUM_HOME=/Users/haiczhan/Workspace/helium
 
 #export HELIUM_DB_STRING=slcak349.us.oracle.com:1524/prmdb13
-
-export ARTIFACTORY_PHX_USR=oscf-artifactory_ww@oracle.com

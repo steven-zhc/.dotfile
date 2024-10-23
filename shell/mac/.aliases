@@ -15,6 +15,9 @@ alias c="ccat"
 
 alias ns="npm start"
 
+alias g="gulp"
+alias gt="gulp --tasks"
+
 # purescript
 alias sb="spago build"
 
