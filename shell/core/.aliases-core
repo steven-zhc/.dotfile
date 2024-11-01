@@ -25,7 +25,9 @@ alias gt='gulp --tasks'
 alias d="docker"
 alias dc="docker-compose"
 
-alias dcn="docker rmi -f $(docker images | grep 'one' | awk '{print $3}')"
+dcn() {
+    docker rmi -f $(docker images | grep 'one' | awk '{print $3}')
+}
 alias dce="docker ps -a | grep Exit | cut -d ' ' -f 1 | xargs docker rm"
 
 # ade
