@@ -13,3 +13,6 @@ alias vi="nvim"
 
 # pnpm
 alias pb="pnpm run build"
+
+# rg
+alias rgf='rg --files | rg'
