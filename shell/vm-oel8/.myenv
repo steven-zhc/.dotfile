@@ -9,3 +9,7 @@ export BIN_DIR=/scratch/local/apps/starship
 export TMPDIR=/scratch/podman/tmp
 
 export PATH=$PATH:/scratch/local/apps/bin
+
+# java
+export JAVA_HOME=/scratch/jdk/jdk-11
+export PATH=$JAVA_HOME/bin:$PATH
