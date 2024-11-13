@@ -14,7 +14,7 @@ export no_proxy=.oraclecloud.com,.oracle.com,.oraclecorp.com,.oraclevcn.com,loca
 # export KUBECONFIG=$KUBECONFIG:/Users/${USER}/.kube/cxsales-sales-common-config
 
 # Rancher
-# export PATH=$PATH:/Users/${USER}/.rd/bin
+export PATH=$PATH:/Users/${USER}/.rd/bin
 
 # node
 export VOLTA_HOME=/Users/${USER}/.volta
