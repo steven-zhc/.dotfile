@@ -21,7 +21,7 @@ export HELIUM_HOME=/scratch/helium
 export HV_PREFIX=/scratch/bin
 export PATH=$HELIUM_HOME/helium.js/cli:$HV_PREFIX:$PATH
 
-export ARTIFACTORY_PHX_USR=haichao.zhang@oracle.com
+#export ARTIFACTORY_PHX_USR=haichao.zhang@oracle.com
 # update password in host .secret file
 
 # ADE PROPS
