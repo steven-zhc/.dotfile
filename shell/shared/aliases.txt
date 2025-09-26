@@ -1,0 +1,24 @@
+# Shared aliases - shell agnostic format
+# Git
+gst=git status
+lg=lazygit
+gc=git reset --hard HEAD; git clean -df
+
+# Gulp
+g=gulp
+gt=gulp --tasks
+
+# Editor
+vi=nvim
+
+# Kubernetes
+k=kubectl
+
+# Container
+d=docker
+dc=docker-compose
+
+# Functions that need shell-specific implementation:
+# dcn() - docker rmi -f $(docker images | grep 'one' | awk '{print $3}')
+# dce() - docker ps -a | grep Exit | cut -d ' ' -f 1 | xargs docker rm
+# help() - "$@" --help 2>&1 | bathelp

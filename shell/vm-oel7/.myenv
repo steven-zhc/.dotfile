@@ -1,4 +1,0 @@
-# .myenv
-if [ -f ~/.myenv-core ]; then
-        . ~/.myenv-core
-fi

@@ -1,0 +1,5 @@
+# Shared PATH additions - shell agnostic format
+$VOLTA_HOME/bin
+$PNPM_HOME
+/Users/$USER/workspace/work-station/script
+~/.local/bin
