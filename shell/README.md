@@ -18,6 +18,10 @@ shell/
 
 ## Quick Setup
 
+```bash
+ln -s ~/.dotfile/git/.gitconfig ~/.gitconfig
+```
+
 Choose **one** shell configuration:
 
 ### Fish Shell (Recommended)
