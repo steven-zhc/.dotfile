@@ -10,8 +10,8 @@ set -gx XDG_CONFIG_HOME ~/.config
 set -gx EDITOR nvim
 
 # Node.js and package managers
-set -gx VOLTA_HOME /Users/steven/.volta
-set -gx PNPM_HOME /Users/steven/.pnpm
+set -gx VOLTA_HOME $HOME/.volta
+set -gx PNPM_HOME $HOME/.pnpm
 
 # Ansible
 set -gx ANSIBLE_CONFIG ~/.ansible/ansible.cfg
@@ -21,7 +21,9 @@ set -gx FZF_DEFAULT_COMMAND 'rg --files'
 
 # PATH additions
 fish_add_path $VOLTA_HOME/bin
-fish_add_path $PNPM_HOME
+if not contains $PNPM_HOME $PATH
+    fish_add_path --prepend $PNPM_HOME
+end
 fish_add_path /Users/(whoami)/workspace/work-station/script
 
 # ~/.local/bin is handled by platform-specific configs since the original

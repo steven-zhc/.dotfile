@@ -10,11 +10,10 @@ if [ -f ~/.dotfile/shell/posix/core/aliases.sh ]; then
 fi
 
 # macOS-specific environment
-# pnpm (ensure it's in PATH)
-case ":$PATH:" in
-  *":$PNPM_HOME:"*) ;;
-  *) export PATH="$PNPM_HOME:$PATH" ;;
-esac
+# Homebrew for Apple Silicon
+if [ -f /opt/homebrew/bin/brew ]; then
+    eval "$(/opt/homebrew/bin/brew shellenv)"
+fi
 
 # Local bin environment
 if [ -f ~/.local/bin/env ]; then

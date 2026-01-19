@@ -17,3 +17,12 @@ else
     source ~/.dotfile/shell/fish/core/env.fish
     source ~/.dotfile/shell/fish/core/aliases.fish
 end
+# Load optional local configurations
+if test -f $HOME/.myenv
+    source $HOME/.myenv
+end
+
+if test -f $HOME/.aliases
+    source $HOME/.aliases
+end
+starship init fish | source

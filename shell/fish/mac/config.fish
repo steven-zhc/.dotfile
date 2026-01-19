@@ -5,10 +5,9 @@ source ~/.dotfile/shell/fish/core/env.fish
 source ~/.dotfile/shell/fish/core/aliases.fish
 
 # macOS-specific environment
-# pnpm (macOS specific path)
-set -gx PNPM_HOME /Users/steven/.pnpm
-if not string match -q "*:$PNPM_HOME:*" ":$PATH:"
-    fish_add_path $PNPM_HOME
+# Homebrew for Apple Silicon
+if test -f /opt/homebrew/bin/brew
+    eval (/opt/homebrew/bin/brew shellenv)
 end
 
 # Local bin (Fish equivalent of ~/.local/bin/env)

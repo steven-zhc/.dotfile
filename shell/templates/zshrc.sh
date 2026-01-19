@@ -29,6 +29,15 @@ else
     source ~/.dotfile/shell/posix/core/aliases.sh
 fi
 
+# Load optional local configurations
+if [ -f "$HOME/.myenv" ]; then
+    . "$HOME/.myenv"
+fi
+
+if [ -f "$HOME/.aliases" ]; then
+    . "$HOME/.aliases"
+fi
+
 # Zsh-specific configurations
 ZSH_THEME="bira"
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=215'

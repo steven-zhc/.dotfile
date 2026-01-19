@@ -28,3 +28,11 @@ else
     source ~/.dotfile/shell/posix/core/env.sh
     source ~/.dotfile/shell/posix/core/aliases.sh
 fi
+# Load optional local configurations
+if [ -f "$HOME/.myenv" ]; then
+    . "$HOME/.myenv"
+fi
+
+if [ -f "$HOME/.aliases" ]; then
+    . "$HOME/.aliases"
+fi

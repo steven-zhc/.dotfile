@@ -10,8 +10,8 @@ export XDG_CONFIG_HOME=~/.config
 export EDITOR=nvim
 
 # Node.js and package managers
-export VOLTA_HOME=/Users/steven/.volta
-export PNPM_HOME=/Users/steven/.pnpm
+export VOLTA_HOME=$HOME/.volta
+export PNPM_HOME=$HOME/.pnpm
 
 # Ansible
 export ANSIBLE_CONFIG=~/.ansible/ansible.cfg
@@ -20,4 +20,4 @@ export ANSIBLE_CONFIG=~/.ansible/ansible.cfg
 export FZF_DEFAULT_COMMAND='rg --files'
 
 # PATH additions
-export PATH=$VOLTA_HOME/bin:$PNPM_HOME:/Users/${USER}/workspace/work-station/script:~/.local/bin:$PATH
+export PATH="$PNPM_HOME:$VOLTA_HOME/bin:/Users/${USER}/workspace/work-station/script:~/.local/bin:$PATH"
