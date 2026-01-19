@@ -9,6 +9,12 @@ See [shell/README.md](shell/README.md) for detailed shell setup instructions sup
 
 ### Additional Components
 
+#### tmux
+
+```bash
+ln -s .dotfile/tmux/mac/tmux.conf ~/.tmux.conf
+```
+
 #### Ansible
 ```bash
 ln -s .dotfile/ansible/ansible.cfg ~/.ansible/ansible.cfg
