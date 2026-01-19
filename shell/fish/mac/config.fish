@@ -12,8 +12,8 @@ end
 
 # Local bin (Fish equivalent of ~/.local/bin/env)
 # The original file uses POSIX syntax, so we replicate its logic in Fish
-if not contains ~/.local/bin $PATH
-    fish_add_path --prepend ~/.local/bin
+if not contains $HOME/.local/bin $PATH
+    fish_add_path --prepend $HOME/.local/bin
 end
 
 # Fish-specific configurations

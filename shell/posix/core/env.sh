@@ -20,4 +20,4 @@ export ANSIBLE_CONFIG=~/.ansible/ansible.cfg
 export FZF_DEFAULT_COMMAND='rg --files'
 
 # PATH additions
-export PATH="$PNPM_HOME:$VOLTA_HOME/bin:/Users/${USER}/workspace/work-station/script:~/.local/bin:$PATH"
+export PATH="$HOME/.local/bin:$PNPM_HOME:$VOLTA_HOME/bin:/Users/${USER}/workspace/work-station/script:$PATH"
